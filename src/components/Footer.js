@@ -3,7 +3,9 @@ import React from "react";
 export default function Footer() {
   return (
     <div className="footer-component">
-      <footer>This is the footer</footer>
+      <footer>
+        <p>Made with ❤️ by Victoria S.</p>
+      </footer>
     </div>
   );
 }

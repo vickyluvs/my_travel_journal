@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Card() {
+export default function Card(props) {
   return (
     <div className="card-component">
       <div className="img-div">
         <img
-          src="./assets/tokeh.jpg"
+          src={props.imageUrl}
           alt="tokeh beach in sierra leone"
           className="location-img"
         />
