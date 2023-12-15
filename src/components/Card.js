@@ -3,7 +3,13 @@ import React from "react";
 export default function Card() {
   return (
     <div className="card-component">
-      <div className="img-div">img goes here!</div>
+      <div className="img-div">
+        <img
+          src="./assets/tokeh.jpg"
+          alt="tokeh beach in sierra leone"
+          className="location-img"
+        />
+      </div>
 
       <section>
         <h1>Location title</h1>
