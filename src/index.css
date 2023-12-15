@@ -13,10 +13,14 @@ body {
 .main-component {
   background-color: white;
   border-radius: 5px;
-  max-width: 480px;
+  max-width: 80%;
   margin: 0 auto;
   padding-top: 5px;
   padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /* header css starts here */
@@ -34,6 +38,26 @@ header {
 }
 
 /* card component css starts here */
+.card-component {
+  padding: 40px;
+  max-width: 480px;
+}
+
+span {
+  font-size: 12px;
+  padding: 3px;
+  color: gray;
+}
+
+span a {
+  text-decoration: none;
+}
+
+p {
+  max-width: 480px;
+  text-align: justify;
+}
+
 .img-div {
   margin-top: 10px;
 }

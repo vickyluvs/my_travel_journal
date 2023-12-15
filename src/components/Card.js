@@ -5,23 +5,24 @@ export default function Card(props) {
     <div className="card-component">
       <div className="img-div">
         <img
-          src={props.imageUrl}
-          alt="tokeh beach in sierra leone"
+          src={`../assets/${props.imageUrl}`}
+          alt={props.alt}
           className="location-img"
         />
       </div>
 
       <section>
-        <h1>Location title</h1>
+        <h1>{props.title}</h1>
         <div>
-          <span className="emoji-pin">📍</span>
           <span>
-            <a href="#">Google Map link</a>
+            <a href={props.googleUrl} target="_blank" rel="noreferrer">
+              📍
+            </a>
           </span>
-          <span>Country Name</span>
-          <span>Date</span>
+          <span>{props.country}</span>
+          <span>{props.date}</span>
         </div>
-        <p>Description</p>
+        <p>{props.description}</p>
       </section>
     </div>
   );
