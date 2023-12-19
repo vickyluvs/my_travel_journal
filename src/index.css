@@ -1,75 +1,66 @@
 body {
-  width: 100%;
+  width: 80%;
   height: 100vh;
-  margin: 0;
-  background-image: url(./assets/trave_background.jpg);
+  margin: 0 auto;
+  background-image: url(../public/assets/trave_background.jpg);
   background-size: cover;
   text-align: center;
   color: #febf89;
   font-family: "Courier New", Courier, monospace;
-  overflow: hidden;
-}
 
-.main-component {
-  background-color: white;
-  border-radius: 5px;
-  max-width: 80%;
-  margin: 0 auto;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-/* header css starts here */
-.header-component {
-  height: 20vh;
+  /* overflow: hidden; */
 }
 
 header {
   font-size: 50px;
-  padding-top: 100px;
+  padding-top: 20px;
   font-weight: bolder;
   text-transform: uppercase;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/* card component css starts here */
+.main-component {
+  display: flex;
+  margin: 25px auto;
+}
 .card-component {
-  padding: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-img-div {
+  margin-top: 30px;
+}
+.location-img {
   max-width: 480px;
+  height: 500px;
+  border-radius: 10px;
 }
 
-span {
-  font-size: 12px;
-  padding: 3px;
-  color: gray;
-}
-
-span a {
+.card-detail a {
   text-decoration: none;
 }
 
-p {
-  max-width: 480px;
-  text-align: justify;
+.card-detail span {
+  padding: 2px;
+  font-size: 10px;
+  color: grey;
 }
 
-.img-div {
-  margin-top: 10px;
+.card-description > p {
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 400px;
+  text-align: left;
 }
-.location-img {
-  width: 200px;
-  height: 300px;
-  border: 2px white solid;
-  border-radius: 10px;
-}
+
 /* footer component css */
 .footer-component {
+  color: white;
   height: 15vh;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
 }
